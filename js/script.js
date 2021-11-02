@@ -1,39 +1,40 @@
+//dichiaro le variabili
 const grid = document.getElementById('grid');
 const playButton = document.getElementById('play-button');
-
 const difficulty = document.getElementById('difficulty');
 let chosenDifficulty;
 
-// const mainText = document.querySelector('main .main-text');
-let square = document.querySelector('.square');
 
+
+// funzione che al click del pulsante "Play!" genera le griglie in base alla difficoltà scelta
 playButton.addEventListener('click', function() {
   chosenDifficulty = parseInt(difficulty.value);
   grid.innerHTML="";
   console.log('click');
-  // mainText.classList.add('d-none');
-  // grid.classList.add('active');
+  
 
   if (chosenDifficulty===1) {
     for (let i=0; i<100; i++) {
-      generateSquare(grid);
+      const square = generateSquare(grid);
       square.innerHTML = i+1;
     }
 
   } else if (chosenDifficulty===2) {
     for (let i=0; i<81; i++) {
-      generateSquare(grid);
+      const square = generateSquare(grid);
+      square.innerHTML = i+1;
     }
 
   } else {
     for (let i=0; i<49; i++) {
-      generateSquare(grid);
+      const square = generateSquare(grid);
+      square.innerHTML = i+1;
     }
   }
 
 });
 
-
+//funzione che genera i quadrati delle griglie
 function generateSquare(target) {
   const sq = document.createElement('div');
   sq.className = 'square';
