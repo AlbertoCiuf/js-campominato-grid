@@ -1,5 +1,29 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  background-color: white;
+}
+
+header img {
+  height: 50px;
+}
+
+main {
+  background-color: #7EFCD4;
+  height: calc(100vh - 130px);
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+}
+
+.main-text {
+  font-size: 24px;
+  font-weight: 900;
 }
