@@ -27,3 +27,36 @@ footer {
   font-size: 24px;
   font-weight: 900;
 }
+
+#grid {
+  display: none;
+}
+
+#grid.active {
+  display: block;
+  width: 500px;
+  height: 500px;
+}
+
+.square {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.square.easy {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.square.normal {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.square.hard {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+}
