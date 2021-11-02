@@ -28,11 +28,9 @@ footer {
   font-weight: 900;
 }
 
-#grid {
-  display: none;
-}
 
-#grid.active {
+
+#grid {
   display: block;
   width: 500px;
   height: 500px;
@@ -43,7 +41,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .square.easy {
